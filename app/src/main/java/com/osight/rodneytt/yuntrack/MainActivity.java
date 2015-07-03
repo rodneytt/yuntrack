@@ -1,21 +1,17 @@
 package com.osight.rodneytt.yuntrack;
 
-import android.app.Activity;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.osight.rodneytt.yuntrack.com.osight.rodneytt.yuntrak.fragment.FragmentHome;
-import com.osight.rodneytt.yuntrack.com.osight.rodneytt.yuntrak.fragment.FragmentMovie;
-import com.osight.rodneytt.yuntrack.com.osight.rodneytt.yuntrak.fragment.FragmentNews;
-import com.osight.rodneytt.yuntrack.com.osight.rodneytt.yuntrak.fragment.FragmentStock;
+import com.osight.rodneytt.yuntrack.fragment.FragmentHome;
+import com.osight.rodneytt.yuntrack.fragment.FragmentMovie;
+import com.osight.rodneytt.yuntrack.fragment.FragmentNews;
+import com.osight.rodneytt.yuntrack.fragment.FragmentStock;
 
 
 public class MainActivity extends FragmentActivity {
@@ -40,7 +36,7 @@ public class MainActivity extends FragmentActivity {
         int count = fragmentClassArray.length;
         for(int i=0;i<count;i++){
             TabHost.TabSpec spec = mTabhost.newTabSpec(tabBtnTextArray[i]).setIndicator(getTabItemView(i));
-            mTabhost.addTab(spec,fragmentClassArray[i],null);
+            mTabhost.addTab(spec, fragmentClassArray[i], null);
            // mTabhost.getTabWidget().getChildTabViewAt(i).setBackgroundResource(R.drawable.selector_tab_background);
         }
     }

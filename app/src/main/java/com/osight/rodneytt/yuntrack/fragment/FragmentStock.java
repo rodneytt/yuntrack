@@ -1,4 +1,4 @@
-package com.osight.rodneytt.yuntrack.com.osight.rodneytt.yuntrak.fragment;
+package com.osight.rodneytt.yuntrack.fragment;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import com.osight.rodneytt.yuntrack.R;
 
-public class FragmentNews extends Fragment {
+public class FragmentStock extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_news, container, false);
+        return inflater.inflate(R.layout.fragment_stock, container, false);
     }
 
 
